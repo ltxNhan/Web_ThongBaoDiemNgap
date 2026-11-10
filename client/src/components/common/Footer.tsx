@@ -10,7 +10,7 @@ export const Footer: React.FC = () => {
             <span style={{ fontWeight: 800, fontSize: '1.1rem', color: '#f8fafc' }}>FLOODGUARD</span>
           </div>
           <p style={{ fontSize: '0.875rem', color: '#94a3b8', lineHeight: 1.6 }}>
-            Hệ thống giám sát trạm quan trắc IoT, dự báo thủy văn và cảnh báo ngập đô thị thông minh phục vụ người dân và các đơn vị phòng chống thiên tai.
+            Hệ thống WebGIS cảnh báo ngập thời gian thực, điều hướng né ngập và hỗ trợ cứu nạn khẩn cấp 114 tại TP.HCM.
           </p>
         </div>
 
@@ -27,7 +27,7 @@ export const Footer: React.FC = () => {
         <div>
           <h4 style={{ color: '#f8fafc', fontSize: '0.95rem', marginBottom: '0.75rem', fontWeight: 700 }}>Phân Hệ & Dịch Vụ</h4>
           <ul style={{ listStyle: 'none', padding: 0, fontSize: '0.875rem', color: '#94a3b8', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            <li>• Bản đồ GIS điểm ngập & Trạm quan trắc</li>
+            <li>• Bản đồ WebGIS điểm ngập & Tuyến né ngập</li>
             <li>• Dự báo triều cường và lượng mưa 24h</li>
             <li>• Tiếp nhận phản ánh ngập từ cộng đồng</li>
             <li>• Cổng quản trị điều hành cán bộ (/admin)</li>
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
         <div>
           <h4 style={{ color: '#f8fafc', fontSize: '0.95rem', marginBottom: '0.75rem', fontWeight: 700 }}>Nguồn Dữ Liệu</h4>
           <p style={{ fontSize: '0.85rem', color: '#94a3b8', lineHeight: 1.6 }}>
-            Dữ liệu tích hợp từ Mạng lưới trạm quan trắc IoT tự động, Đài Khí tượng Thủy văn khu vực Nam Bộ và Trung tâm Quản lý Hạ tầng Kỹ thuật.
+            Dữ liệu tích hợp từ Đài Khí tượng Thủy văn khu vực Nam Bộ, Trung tâm Quản lý Hạ tầng Kỹ thuật và Phản ánh hiện trường xác thực từ người dân.
           </p>
         </div>
       </div>

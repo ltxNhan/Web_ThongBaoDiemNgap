@@ -64,7 +64,7 @@ export const LayerControl: React.FC<LayerControlProps> = ({
             checked={showStations}
             onChange={(e) => setShowStations(e.target.checked)}
           />
-          <span>Trạm quan trắc IoT mưa/triều</span>
+          <span>Mốc thủy văn & Điểm triều</span>
         </label>
       </div>
 

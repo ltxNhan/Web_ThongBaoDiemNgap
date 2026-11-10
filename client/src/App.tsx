@@ -51,7 +51,10 @@ export const App: React.FC = () => {
           <HomePage
             onNavigateTab={setCurrentTab}
             floodPoints={floodPoints}
+            stations={stations}
             alerts={alerts}
+            onOpenAuthModal={() => setIsAuthModalOpen(true)}
+            onRequestRescue={() => setIsRescueModalOpen(true)}
           />
         )}
         {currentTab === 'map' && (
