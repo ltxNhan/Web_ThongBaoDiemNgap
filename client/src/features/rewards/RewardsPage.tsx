@@ -288,7 +288,7 @@ export const RewardsPage: React.FC<RewardsPageProps> = ({ onNavigateTab }) => {
             </span>
             <h3>Gửi Báo Cáo Được Phê Duyệt</h3>
             <p>
-              Điểm được tự động cộng ngay khi Admin xác thực hợp lệ hoặc dữ liệu báo cáo khớp với trạm cảm biến IoT lân cận.
+              Điểm được tự động cộng ngay khi Admin xác thực hợp lệ hoặc dữ liệu báo cáo được cộng đồng lân cận xác nhận độ chính xác.
             </p>
           </div>
 

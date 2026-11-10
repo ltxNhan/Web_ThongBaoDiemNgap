@@ -48,7 +48,7 @@ export const MapLegend: React.FC = () => {
           📍 Điểm ngập
         </span>
         <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem' }}>
-          📡 Trạm IoT
+          🌊 Mốc thủy văn
         </span>
         <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '0.75rem' }}>
           🦺 Điểm sơ tán
