@@ -1,0 +1,292 @@
+/* CommunityPage Modular CSS */
+.community-page-layout {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 96px);
+  background-color: #070e22;
+  overflow: hidden;
+}
+
+.community-main-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 380px 320px 1fr;
+  gap: 20px;
+  padding: 24px;
+  overflow-y: auto;
+}
+
+@media (max-width: 1280px) {
+  .community-main-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .community-main-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Common Card style */
+.community-col-card {
+  background-color: #0b1532;
+  border: 1px solid #1a2950;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.community-section-heading {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+/* Column 1: Report Form */
+.community-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.field-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.input-with-button-row {
+  display: flex;
+  gap: 8px;
+}
+
+.community-input-text {
+  flex: 1;
+  background-color: #101c40;
+  border: 1px solid #1e3264;
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: #f1f5f9;
+  font-size: 0.85rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.community-input-text:focus {
+  border-color: #38bdf8;
+}
+
+.choose-map-btn {
+  background-color: #162452;
+  border: 1px solid #233876;
+  border-radius: 6px;
+  padding: 0 12px;
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+.choose-map-btn:hover {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+/* Radio Group */
+.flood-radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.flood-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: #cbd5e1;
+  cursor: pointer;
+  user-select: none;
+}
+
+.flood-radio-label input[type='radio'] {
+  accent-color: #0284c7;
+  width: 15px;
+  height: 15px;
+}
+
+/* Media upload dropzone */
+.media-upload-dropzone {
+  border: 2px dashed #203468;
+  border-radius: 8px;
+  padding: 14px;
+  background-color: #0e1838;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.media-upload-dropzone:hover {
+  border-color: #38bdf8;
+}
+
+.upload-icon-text-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+
+.upload-icon-svg {
+  color: #38bdf8;
+}
+
+.uploaded-preview-thumb {
+  width: 72px;
+  height: 52px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #334155;
+}
+
+.community-textarea {
+  width: 100%;
+  background-color: #101c40;
+  border: 1px solid #1e3264;
+  border-radius: 6px;
+  padding: 9px 12px;
+  color: #f1f5f9;
+  font-size: 0.85rem;
+  font-family: inherit;
+  outline: none;
+  resize: vertical;
+  min-height: 56px;
+}
+
+.community-textarea:focus {
+  border-color: #38bdf8;
+}
+
+.submit-report-btn {
+  background: linear-gradient(135deg, #d9480f 0%, #ea580c 100%);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 6px;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.4);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.submit-report-btn:hover {
+  background: linear-gradient(135deg, #c2410c 0%, #d9480f 100%);
+  transform: translateY(-2px);
+}
+
+/* Column 2: Mini Report Map */
+.community-map-wrapper {
+  flex: 1;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 480px;
+  background-color: #f8fafc;
+}
+
+#community-leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Column 3: Feed list */
+.community-reports-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.report-feed-card {
+  position: relative;
+  background-color: #0f1c3f;
+  border-radius: 8px;
+  padding: 14px;
+  border: 1px solid #1a2a56;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.report-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.report-meta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.report-street-name {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.report-author-time {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+.report-body-text {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.report-image-thumb {
+  width: 100px;
+  height: 64px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #334155;
+  flex-shrink: 0;
+}
+
+.report-verified-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #4ade80;
+  font-size: 0.78rem;
+  font-weight: 700;
+}

@@ -1,0 +1,229 @@
+/* ConfigurationPage Modular CSS matching Screenshot 5 */
+.config-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.config-2col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .config-2col-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.config-column-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.config-section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.config-section-heading {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* Switch toggle */
+.toggle-switch-label {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 20px;
+}
+
+.toggle-switch-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1e2c48;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: '';
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #0284c7;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(18px);
+}
+
+/* Card Box */
+.config-card-box {
+  background-color: #0c1527;
+  border: 1px solid #1a273e;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.config-card-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #162238;
+  padding-bottom: 10px;
+}
+
+.config-card-title {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.config-group-block {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.config-group-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+/* Threshold rows */
+.threshold-input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.threshold-name-txt {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  font-weight: 600;
+  min-width: 150px;
+}
+
+.threshold-name-txt.green {
+  color: #4ade80;
+}
+
+.threshold-name-txt.orange {
+  color: #facc15;
+}
+
+.threshold-name-txt.red {
+  color: #f87171;
+}
+
+.threshold-input-box-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.threshold-input-control {
+  background-color: #101c34;
+  border: 1px solid #1e2c48;
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: #ffffff;
+  font-size: 0.82rem;
+  text-align: center;
+  outline: none;
+}
+
+.threshold-input-control.green-border {
+  border-color: #059669;
+  color: #34d399;
+}
+
+.threshold-input-control.orange-border {
+  border-color: #d97706;
+  color: #fbbf24;
+}
+
+.threshold-input-control.red-bg {
+  background-color: #991b1b;
+  border-color: #b91c1c;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Select dropdowns */
+.select-setting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.select-setting-label {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.select-setting-dropdown {
+  background-color: #101c34;
+  border: 1px solid #1e2c48;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #ffffff;
+  font-size: 0.8rem;
+  outline: none;
+  width: 140px;
+}
+
+/* Checkbox triggers */
+.trigger-checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.trigger-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.trigger-checkbox-item input[type='checkbox'] {
+  accent-color: #0284c7;
+  width: 15px;
+  height: 15px;
+}

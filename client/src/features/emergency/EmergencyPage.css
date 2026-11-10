@@ -1,0 +1,370 @@
+/* EmergencyPage Modular CSS */
+.emergency-page-layout {
+  display: flex;
+  width: 100%;
+  min-height: calc(100vh - 96px);
+  background-color: #070e22;
+  overflow: hidden;
+}
+
+.emergency-main-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 360px 1fr 380px;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+@media (max-width: 1280px) {
+  .emergency-main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .emergency-main-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Columns */
+.emergency-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.emergency-card {
+  background-color: #0b1532;
+  border: 1px solid #1a2a50;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.emergency-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Call Hotline Buttons */
+.hotline-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hotline-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hotline-btn.red-114 {
+  background-color: #ef4444;
+}
+
+.hotline-btn.coral-115 {
+  background-color: #f87171;
+}
+
+.hotline-btn.orange-city {
+  background-color: #ea580c;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.volunteer-rescue-box {
+  background-color: #0e1838;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.volunteer-title {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  font-weight: 700;
+}
+
+.volunteer-input-row {
+  display: flex;
+  gap: 8px;
+}
+
+.volunteer-input {
+  flex: 1;
+  background-color: #101c40;
+  border: 1px solid #1e3264;
+  border-radius: 6px;
+  padding: 8px 10px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.call-now-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Shelters Section */
+.district-pill-filter {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.district-pill {
+  padding: 6px 14px;
+  border-radius: 6px;
+  background-color: #111e42;
+  border: 1px solid #1e3264;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.district-pill.active {
+  background-color: #0284c7;
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
+.shelters-status-note {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shelter-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shelter-item-card {
+  display: flex;
+  gap: 12px;
+  background-color: #0f1c3f;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #1a2a56;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shelter-item-card:hover {
+  background-color: #142452;
+  transform: translateX(2px);
+}
+
+.shelter-thumb-img {
+  width: 72px;
+  height: 58px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.shelter-info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.shelter-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+}
+
+.shelter-badge-open {
+  font-size: 0.75rem;
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.shelter-capacity {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* Center Map */
+.emergency-map-card {
+  background-color: #0b1532;
+  border: 1px solid #1a2a50;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.emergency-map-legend-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 12px 18px;
+  background-color: #09122c;
+  border-bottom: 1px solid #1a2950;
+}
+
+.map-legend-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.emergency-map-container {
+  flex: 1;
+  min-height: 440px;
+  width: 100%;
+  position: relative;
+}
+
+#emergency-leaflet-map {
+  width: 100%;
+  height: 100%;
+}
+
+.emergency-map-footer-note {
+  padding: 12px 18px;
+  background-color: #09122c;
+  border-top: 1px solid #1a2950;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-route-txt {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-gps-txt {
+  font-size: 0.78rem;
+  color: #94a3b8;
+}
+
+/* Right Guide Tabs */
+.guide-tabs-row {
+  display: flex;
+  border-bottom: 1px solid #1a2a56;
+}
+
+.guide-tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 8px 6px;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.guide-tab-btn.active {
+  color: #38bdf8;
+  border-bottom-color: #0284c7;
+}
+
+.guide-content-table {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide-table-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background-color: #0e1838;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.guide-period-col {
+  width: 80px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #cbd5e1;
+  flex-shrink: 0;
+}
+
+.guide-details-col {
+  flex: 1;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  line-height: 1.45;
+}
+
+/* Emergency Kit Grid */
+.kit-items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.kit-item-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  background-color: #0e1838;
+  padding: 12px 8px;
+  border-radius: 8px;
+  border: 1px solid #1a2a56;
+}
+
+.kit-icon-display {
+  font-size: 2rem;
+}
+
+.kit-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #cbd5e1;
+  line-height: 1.3;
+}

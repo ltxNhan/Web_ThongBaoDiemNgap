@@ -1,0 +1,241 @@
+/* ReportsModerationPage Modular CSS matching Screenshot 3 */
+.reports-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.reports-layout-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .reports-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Reports List Card */
+.reports-list-card {
+  background-color: #0c1527;
+  border: 1px solid #1a273e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.report-item-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 140px 100px;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #142036;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.report-item-row:hover {
+  background-color: #121e36;
+}
+
+.report-item-row.selected {
+  background-color: #142342;
+  border-left: 3px solid #38bdf8;
+}
+
+.report-table-thumb {
+  width: 90px;
+  height: 60px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #1e2c48;
+}
+
+.report-table-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.report-title-txt {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.report-author-meta {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.report-desc-snippet {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.report-level-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.report-level-pill.danger {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.report-level-pill.warning {
+  background-color: rgba(249, 115, 22, 0.2);
+  color: #f97316;
+}
+
+.report-level-pill.moderate {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+}
+
+.report-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.btn-approve-sm {
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-approve-sm:hover {
+  background-color: #059669;
+}
+
+.btn-reject-sm {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-reject-sm:hover {
+  background-color: #dc2626;
+}
+
+/* Right Detail Column */
+.report-detail-panel {
+  background-color: #0c1527;
+  border: 1px solid #1a273e;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.report-detail-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #1e2c48;
+}
+
+.report-detail-big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.report-image-time-tag {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(12, 21, 39, 0.85);
+  color: #f1f5f9;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid #1e2c48;
+}
+
+.report-detail-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  line-height: 1.45;
+}
+
+.btn-action-approve-big {
+  width: 100%;
+  background-color: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-action-approve-big:hover {
+  background-color: #059669;
+}
+
+.btn-action-reject-big {
+  width: 100%;
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-action-reject-big:hover {
+  background-color: #dc2626;
+}
+
+.btn-action-recheck {
+  width: 100%;
+  background-color: #121c32;
+  border: 1px solid #1e2c48;
+  color: #cbd5e1;
+  padding: 9px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.push-notif-check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}

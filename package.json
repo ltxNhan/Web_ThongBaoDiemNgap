@@ -1,0 +1,31 @@
+{
+  "name": "flood-warning-system",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hệ thống Cảnh báo ngập lụt đô thị thông minh (Smart Flood Warning System)",
+  "scripts": {
+    "dev:client": "pnpm --filter client dev",
+    "dev:admin": "pnpm --filter admin dev",
+    "dev:server": "pnpm --filter server dev",
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "flood-warning",
+    "iot",
+    "gis",
+    "weather-monitoring",
+    "leaflet"
+  ],
+  "author": "Flood Warning Dev Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.1",
+    "vitest": "^5.0.5"
+  }
+}

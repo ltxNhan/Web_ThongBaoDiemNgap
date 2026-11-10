@@ -1,0 +1,237 @@
+/* StationManagementPage Modular CSS */
+.stations-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.page-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.page-title-main {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.page-sub-title {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.header-action-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-primary-blue {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary-blue:hover {
+  background-color: #0369a1;
+}
+
+.btn-secondary-outline {
+  background-color: #121c32;
+  border: 1px solid #1e2c48;
+  color: #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary-outline:hover {
+  background-color: #162440;
+  color: #ffffff;
+}
+
+/* Tabs */
+.filter-tabs-bar {
+  display: flex;
+  border-bottom: 1px solid #1a273e;
+  gap: 20px;
+}
+
+.filter-tab-item {
+  background: transparent;
+  border: none;
+  padding: 10px 4px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.filter-tab-item:hover {
+  color: #ffffff;
+}
+
+.filter-tab-item.active {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+.filter-tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #38bdf8;
+  border-radius: 2px 2px 0 0;
+}
+
+/* 2 Columns Layout */
+.stations-layout-grid {
+  display: grid;
+  grid-template-columns: 2.4fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 1100px) {
+  .stations-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Table Card */
+.station-table-card {
+  background-color: #0c1527;
+  border: 1px solid #1a273e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.station-status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.station-status-badge.active {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+}
+
+.station-status-badge.error {
+  background-color: rgba(239, 68, 68, 0.18);
+  color: #ef4444;
+}
+
+.station-status-badge.warning {
+  background-color: rgba(245, 158, 11, 0.18);
+  color: #f59e0b;
+}
+
+.action-links-group {
+  display: flex;
+  gap: 6px;
+  font-size: 0.78rem;
+}
+
+.action-link {
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+/* Right Detail Column */
+.station-detail-panel {
+  background-color: #0c1527;
+  border: 1px solid #1a273e;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-header-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}
+
+.detail-mini-map-box {
+  height: 180px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #1a273e;
+}
+
+#station-mini-gis-map {
+  width: 100%;
+  height: 100%;
+}
+
+.trigger-actions-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-trigger-action {
+  width: 100%;
+  background-color: #121c32;
+  border: 1px solid #1e2c48;
+  color: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-trigger-action:hover {
+  background-color: #182645;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}

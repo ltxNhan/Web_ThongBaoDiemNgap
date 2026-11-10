@@ -1,0 +1,280 @@
+/* ForecastPage Modular CSS */
+.forecast-page-layout {
+  max-width: 1520px;
+  margin: 24px auto 48px;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.forecast-grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .forecast-grid-2x2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.forecast-panel-card {
+  background-color: #0b1532;
+  border: 1px solid #1a2a56;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.forecast-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.header-action-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.action-link-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  font-family: inherit;
+}
+
+.action-link-btn:hover {
+  color: #38bdf8;
+}
+
+/* Card 1: Real-time Alerts */
+.alerts-list-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.alert-callout-box {
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 14px;
+}
+
+.alert-callout-box.red {
+  background-color: #991b1b;
+  border: 1px solid #b91c1c;
+}
+
+.alert-callout-box.orange {
+  background-color: #c2410c;
+  border: 1px solid #ea580c;
+}
+
+.alert-icon-wrap {
+  display: flex;
+  align-items: flex-start;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.alert-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alert-box-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.alert-box-text {
+  font-size: 0.85rem;
+  color: #f1f5f9;
+  line-height: 1.45;
+}
+
+/* Card 2: Regional Forecast */
+.regional-forecast-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  flex: 1;
+}
+
+.mini-district-map {
+  background-color: #f8fafc;
+  border-radius: 8px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #203468;
+}
+
+.district-table-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.district-table-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 10px;
+  border-bottom: 1px solid #1a2a56;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.district-table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: #0f1c3f;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.district-risk-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.district-risk-tag.high {
+  color: #f87171;
+}
+
+.district-risk-tag.medium {
+  color: #facc15;
+}
+
+.district-risk-tag.low {
+  color: #4ade80;
+}
+
+/* Card 3: Subscribe Form */
+.subscribe-desc {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 16px;
+  line-height: 1.45;
+}
+
+.subscribe-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.subscribe-input {
+  width: 100%;
+  background-color: #101c40;
+  border: 1px solid #1e3264;
+  border-radius: 6px;
+  padding: 11px 14px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.subscribe-input:focus {
+  border-color: #38bdf8;
+}
+
+.subscribe-input::placeholder {
+  color: #64748b;
+}
+
+.subscribe-note-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.subscribe-submit-btn {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.4);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.subscribe-submit-btn:hover {
+  background-color: #0369a1;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.6);
+}
+
+/* Card 4: Rainfall & Tide Wave Charts */
+.charts-double-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  flex: 1;
+}
+
+.subchart-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.subchart-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #cbd5e1;
+}
+
+.chart-drawing-box {
+  height: 180px;
+  background-color: #081026;
+  border-radius: 8px;
+  border: 1px solid #16244d;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
